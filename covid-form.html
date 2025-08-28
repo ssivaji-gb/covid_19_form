@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Referral Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="head-heading">Covid-19 Referral Form</h1>
+
+    <div class="overall-container">
+        <form method="POST" action="">
+            <h3 class="Personal-details-h3">Personal Details</h3>
+
+            <div class="form-group">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Age">Age</label><br>
+                <input type="number" id="Age" name="Age" min="16" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="birth">Date of birth</label><br>
+                <input type="date" id="birth" name="birth" required><br>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label><br>
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label><br>
+            </div>
+
+            <div class="form-group">
+                <label>Patient in quarantine facility?</label><br>
+                <input type="radio" id="quarYes" name="Quarantine" value="yes">
+                <label for="quarYes">Yes</label>
+                <input type="radio" id="quarNo" name="Quarantine" value="no">
+                <label for="quarNo">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="BloodGroup">Blood Group</label><br>
+                <select id="BloodGroup" name="BloodGroup">
+                    <option value="">--Select Blood Group--</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="PresentVillage">Present village / Town</label><br>
+                <input type="text" id="PresentVillage" name="PresentVillage"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="District">District / State</label><br>
+                <input type="text" id="District" name="District"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Nationality">Nationality</label><br>
+                <input type="text" id="Nationality" name="Nationality"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Phone">Phone number</label><br>
+                <input type="tel" id="Phone" name="Phone" maxlength="10"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Address">Patient’s address :</label><br>
+                <textarea id="Address" name="Address" placeholder="Enter your address.."></textarea><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Pincode">Pincode</label><br>
+                <input type="tel" id="Pincode" name="Pincode" maxlength="6"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Aadhar">Aadhar Number</label><br>
+                <input type="tel" id="Aadhar" name="Aadhar" maxlength="12" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="AadharFile">Upload your Aadhar file</label><br>
+                <input type="file" id="AadharFile" name="AadharFile" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Passport">Passport Number</label><br>
+                <input type="tel" id="Passport" name="Passport" required><br>
+            </div>
+
+            <h3>Medical Information</h3>
+            <div class="form-group">
+                <label>Symptoms:</label><br>
+                <input type="checkbox" id="cough" value="cough"><label for="cough">Cough</label><br>
+                <input type="checkbox" id="diarrhea" value="diarrhea"><label for="diarrhea">Diarrhea</label><br>
+                <input type="checkbox" id="vomiting" value="vomiting"><label for="vomiting">Vomiting</label><br>
+                <input type="checkbox" id="fever" value="fever"><label for="fever">Fever</label><br>
+                <input type="checkbox" id="pain" value="pain"><label for="pain">Abdominal Pain</label><br>
+                <input type="checkbox" id="breath" value="breath"><label for="breath">Breathlessness</label><br>
+            </div>
+
+            <h3>Hospitalization</h3>
+            <div class="form-group">
+                <label>Hospitalized</label><br>
+                <input type="radio" id="hospYes" name="Hospitalized" value="yes"><label for="hospYes">Yes</label>
+                <input type="radio" id="hospNo" name="Hospitalized" value="no"><label for="hospNo">No</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="HospDate">Hospitalization date</label><br>
+                <input type="date" id="HospDate" name="HospDate"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="HospName">Hospital Name</label><br>
+                <input type="text" id="HospName" name="HospName"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="HospAddress">Hospital Address :</label><br>
+                <textarea id="HospAddress" name="HospAddress" placeholder="Enter hospital address.."></textarea><br>
+            </div>
+
+            <h3>Doctor details</h3>
+            <div class="form-group">
+                <label for="DoctorName">Doctor name</label><br>
+                <input type="text" id="DoctorName" name="DoctorName" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="DoctorPhone">Doctor Mobile No:</label><br>
+                <input type="tel" id="DoctorPhone" name="DoctorPhone" required><br>
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Google Map outside form -->
+    <div class="form-group map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3386269469984!2d80.24334507599065!3d13.077712487247517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52667705ba1a01%3A0xb59781072e7d30a0!2sApollo%20First%20Med%20Hospitals!5e0!3m2!1sen!2sin!4v1756399794719!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" style="border-radius: 110px;"></iframe>
+    </div>
+
+</body>
+
+</html>
