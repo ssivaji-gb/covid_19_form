@@ -1,13 +1,15 @@
-* {
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
+* { font-size: 20px; 
+    font-family: Arial, sans-serif; 
+    text-decoration: none;
+ }
 
 
 /* ---------------------------------------INDEX STYLES------------------------------------------------- */
 
 .index-body {
     background-image: url(BaMu-Hospital.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     background-color: #e9f0f5;
     margin: 0;
@@ -23,7 +25,7 @@
 
 .index-main {
     max-width: 800px;
-    margin: 145px auto;
+    margin: 50px auto 0px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.863);
     border-radius: 10px;
@@ -31,12 +33,15 @@
 }
 
 .index-header-h1 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 .index-main-h2 {
     text-align: center;
+}
+.index-header-h3{
+    font-size: 20px;
 }
 
 .index-main p {
@@ -76,7 +81,7 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 20px;
-    font-size: 62px;
+    font-size: 40px;
 }
 
 .overall-container {
@@ -96,7 +101,13 @@ h3 {
     margin-bottom: 15px;
 }
 
-.form-group {
+.form-group-map-container { width: 35%; 
+    /* float: right; */ 
+    position: absolute; 
+    top: 40px; 
+    right: 21px; 
+}
+.form-group{
     line-height: 1.8;
     margin-bottom: 15px;
 }
@@ -143,53 +154,50 @@ button:hover {
 }
 
 
-.covid-form-footer {
-    text-align: center;
-    height: 480px;
-    padding: 36px;
-    background: #d3d7d8b9;
-    font-size: 1rem;
-}
+.covid-form-footer { position: relative; 
+    text-align: center; 
+    height: 325px; 
+    padding: 36px 36px 0px 36px;
+    background: #d3d7d8b9; 
+    font-size: 1rem; }
 
 
 
 
 .footer-logo a p {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     float: left;
-    font-size: 40px;
+    font-size: 32px;
     font-family: "Bree Serif", serif;
     transition: transform 0.3s ease;
 }
-
 .footer-logo a p:hover {
     transform: scale(1.1);
 }
 
-.contact-info {
-    margin-right: 615px;
-    margin-top: 105px;
-    color: rgba(0, 0, 0, 0.74);
+.contact-info { width: 66%; 
+    /* margin-right: 615px; */ 
+    /* margin-top: 105px; */ 
+    color: rgba(0, 0, 0, 0.74); 
 }
 
 .social-links {
-    margin: 20px;
-    margin-left: -110px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+    display: inline;
+    float: right;
+    padding-right: 106px;
 }
+
 
 .social-links a i {
     font-size: 36px;
     margin: 0 10px;
     color: #3498db;
-    transition: transform 0.3s ease;
+    transition:  0.5s ease;
     display: inline-block;
 }
 
-.social-links a:hover {
-    transform: translateY(-8px) scale(1.1);
+.social-links a i:hover {
+    transform: scale(1.1);
 }
 
 
@@ -211,12 +219,18 @@ button:hover {
     color: #e74c3c;
 }
 
-iframe {
-    float: right;
-    margin-top: -270px;
+iframe { 
+    /* float: right; */ 
+    /* margin-top: -270px; */ 
+    width: 100%; height: 231px; 
+    border-radius: 5%; 
 }
 
 .footer-footer {
-    margin-top: 200PX;
+    position: absolute;
+    bottom: 0;
     color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    width: 94%;
 }
+
